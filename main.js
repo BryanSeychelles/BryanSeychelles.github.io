@@ -1,9 +1,5 @@
 'use strict';
 
-AOS.init({
-    easing: 'ease-in-out-sine'
-  });
-
   console.log(window.location)
 
 // ------------------- manipulation du dom -------------------------//
