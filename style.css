@@ -277,7 +277,8 @@ nav a:hover{
 }
 
 #dip_one{
-    background-image: url('');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/afpa.jpeg');
+	color: lavenderblush;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
