@@ -12,6 +12,10 @@ html{
 width: auto;
 }
 
+a {
+	text-decoration: none; 
+}
+
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100');
 
 .container{
@@ -298,6 +302,11 @@ nav a:hover{
 
 #descriptif{ 
     text-decoration: rgb(255, 255, 255);
+}
+
+.close {
+	margin-right: 5%;
+	color: ivory;
 }
 
 .main {

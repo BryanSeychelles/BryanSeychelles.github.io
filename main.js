@@ -1,7 +1,5 @@
 'use strict';
 
-  console.log(window.location)
-
 // ------------------- manipulation du dom -------------------------//
 var section1 = document.getElementById('content_one')
 var presentation = document.getElementById('presentation')
@@ -109,6 +107,12 @@ var descriptif = document.getElementsByClassName('descriptif');
 for( var i = 0; i < descriptif.length ; i++)
    {
     descriptif[i].style.display = 'none';
+   }
+
+   var closes = document.getElementsByClassName('close');
+for( var i = 0; i < closes.length ; i++)
+   {
+    closes[i].style.display = 'none';
    }
 
 // ---------------------------- animation -----------------------------//
@@ -302,7 +306,6 @@ $(document).ready(function animateComputer() {
 })
 
 function ZoomExp() {
-  
   if (this.style.width === '90%') {
     return
   }
@@ -363,18 +366,18 @@ function ZoomExp() {
   }
 }
 
-function DézoomExp() {
-  
-  if (this.style.width === '90%') {
+function DézoomExp(id) {
+
+  if (id.style.width === '90%') {
 
     section3.style.position = 'relative'
     section4.style.position = 'relative'
-    this.style.position = 'absolute'
-    this.style.zIndex = '0'
-    this.style.width = '40%'
-    this.style.height = 'auto'
+    id.style.position = 'absolute'
+    id.style.zIndex = '0'
+    id.style.width = '40%'
+    id.style.height = 'auto'
 
-    this.animate([
+    id.animate([
     // keyframes
     { width: '90%' }, 
     { height: '20%' }, 
@@ -390,9 +393,14 @@ function DézoomExp() {
       date[i].style.display = 'none';
     }
 
-  for( var i = 0; i < descriptif.length ; i++)
+    for( var i = 0; i < descriptif.length ; i++)
     {
       descriptif[i].style.display = 'none';
+    } 
+
+  for( var i = 0; i < closes.length ; i++)
+    {
+      closes[i].style.display = 'none';
     } 
   }
   else {
@@ -401,19 +409,19 @@ function DézoomExp() {
 
 }
 
-function DézoomRight() {
+function DézoomRight(id) {
   
-  if (this.style.width === '90%') {
+  if (id.style.width === '90%') {
 
     section3.style.position = 'relative'
     section4.style.position = 'relative'
-    this.style.position = 'absolute'
-    this.style.zIndex = '0'
-    this.style.width = '40%'
-    this.style.height = 'auto'
-    this.style.transform = 'translateX(700px)'
+    id.style.position = 'absolute'
+    id.style.zIndex = '0'
+    id.style.width = '40%'
+    id.style.height = 'auto'
+    id.style.transform = 'translateX(700px)'
 
-    this.animate([
+    id.animate([
     // keyframes
     { width: '90%' }, 
     { height: '20%' },
@@ -434,19 +442,29 @@ function DézoomRight() {
       descriptif[i].style.display = 'none';
     } 
 
+    for( var i = 0; i < descriptif.length ; i++)
+    {
+      descriptif[i].style.display = 'none';
+    } 
+
+    for( var i = 0; i < closes.length ; i++)
+    {
+      closes[i].style.display = 'none';
+    } 
+
   } 
-  if (this.style.backgroundColor === 'indigo') {
+  if (id.style.backgroundColor === 'indigo') {
 
     section3.style.position = 'relative'
     section4.style.position = 'relative'
-    this.style.position = 'absolute'
-    this.style.zIndex = '0'
-    this.style.width = '40%'
-    this.style.height = 'auto'
-    this.style.backgroundColor = 'blue'
-    this.style.marginLeft = '2.5%'
+    id.style.position = 'absolute'
+    id.style.zIndex = '0'
+    id.style.width = '40%'
+    id.style.height = 'auto'
+    id.style.backgroundColor = 'blue'
+    id.style.marginLeft = '2.5%'
 
-    this.animate([
+    id.animate([
     // keyframes
     { width: '90%' }, 
     { height: '20%' },
@@ -466,15 +484,20 @@ function DézoomRight() {
     {
       descriptif[i].style.display = 'none';
     }
+
+    for( var i = 0; i < closes.length ; i++)
+    {
+      closes[i].style.display = 'none';
+    } 
   }
    else {
     return
   }
 }
 
-exp_one.addEventListener('click', ZoomExp)
-exp_two.addEventListener('click', ZoomExp)
-exp_three.addEventListener('click', ZoomExp)
-  dip_one.addEventListener('click', ZoomExp)
-  dip_two.addEventListener('click', ZoomExp)
+exp_one.addEventListener('dblclick', ZoomExp)
+exp_two.addEventListener('dblclick', ZoomExp)
+exp_three.addEventListener('dblclick', ZoomExp)
+  dip_one.addEventListener('dblclick', ZoomExp)
+  dip_two.addEventListener('dblclick', ZoomExp)
 
