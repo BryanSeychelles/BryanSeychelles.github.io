@@ -478,9 +478,3 @@ exp_three.addEventListener('click', ZoomExp)
   dip_one.addEventListener('click', ZoomExp)
   dip_two.addEventListener('click', ZoomExp)
 
-exp_one.addEventListener('mouseout', DézoomExp)
-exp_two.addEventListener('mouseout', DézoomRight)
-exp_three.addEventListener('mouseout', DézoomExp)
-  dip_one.addEventListener('mouseout', DézoomExp)
-  dip_two.addEventListener('mouseout', DézoomRight)
-
