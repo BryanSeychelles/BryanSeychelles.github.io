@@ -247,7 +247,6 @@ nav a:hover{
 }
 
 #content_four{
-    margin-top: 20%;
     height: 40vh;
 }
 
@@ -260,7 +259,7 @@ nav a:hover{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/developpeur.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+	background-size: cover;
     color: lavenderblush;
 }
 
@@ -269,7 +268,7 @@ nav a:hover{
 	color: lavenderblush;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+	background-size: cover;
 }
 
 #exp_three{
@@ -277,7 +276,7 @@ nav a:hover{
     color: lavenderblush;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+	background-size: cover;
 }
 
 #dip_one{
@@ -285,7 +284,7 @@ nav a:hover{
 	color: lavenderblush;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+	background-size: cover;
 }
 
 #dip_two{
@@ -293,7 +292,7 @@ nav a:hover{
 	color: lavenderblush;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+	background-size: cover;
 }
 
 #date{ 

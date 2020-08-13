@@ -62,7 +62,6 @@ exp_one.style.height= 'auto';
 exp_one.style.float = 'left';
 exp_one.style.marginLeft = '7.5%'
 
-
 exp_two.style.textAlign = 'center';
 exp_two.style.textDecorationColor = 'white';
 exp_two.style.backgroundColor = 'rgb(75, 208, 245)';
