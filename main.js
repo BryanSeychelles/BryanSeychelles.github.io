@@ -116,7 +116,11 @@ for( var i = 0; i < closes.length ; i++)
 
 // ---------------------------- animation -----------------------------//
 
+if (window.matchMedia("(max-width: 800px)").matches) {
 
+  alert("Ce site Web est disponible qu'en version ordinateur. Merci de le consulter sur un pc ou un ordinateur. Version mobile à venir. Bien cordialement. Bryan Seychelles")
+
+}
 
 
 $(document).ready(function animateComputer() {
