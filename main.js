@@ -497,6 +497,6 @@ exp_four.addEventListener('dblclick', ZoomExp)
 
   if (window.matchMedia("(max-width: 800px)").matches) {
 
-    document.location.href="http://127.0.0.1:5500/index_mobile.html";
+    document.location.href="http://bryanseychelles.github.io/index_mobile.html";
         
     }
