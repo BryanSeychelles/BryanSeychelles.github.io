@@ -54,7 +54,7 @@
     exp_one.style.textAlign = 'center';
     exp_one.style.backgroundColor = 'rgb(162, 68, 230)';
     exp_one.style.borderRadius = '10px 100px / 120px';
-    exp_one.style.width= '60%';
+    exp_one.style.width= '70%';
     exp_one.style.height= 'auto';
     exp_one.style.float = 'left';
     
@@ -62,14 +62,14 @@
     exp_two.style.textDecorationColor = 'white';
     exp_two.style.backgroundColor = 'rgb(75, 208, 245)';
     exp_two.style.borderRadius = '10px 100px / 120px';
-    exp_two.style.width= '60%';
+    exp_two.style.width= '70%';
     exp_two.style.height= 'auto';
     exp_two.style.float = 'left';
     
     exp_three.style.textAlign = 'center';
     exp_three.style.backgroundColor = 'rgb(162, 68, 230)';
     exp_three.style.borderRadius = '10px 100px / 120px';
-    exp_three.style.width= '60%';
+    exp_three.style.width= '70%';
     exp_three.style.height= 'auto';
     exp_three.style.float = 'right';
     
@@ -77,14 +77,14 @@
     exp_four.style.textDecorationColor = 'white';
     exp_four.style.backgroundColor = 'rgb(75, 208, 245)';
     exp_four.style.borderRadius = '10px 100px / 120px';
-    exp_four.style.width= '60%';
+    exp_four.style.width= '70%';
     exp_four.style.height= 'auto';
     exp_four.style.float = 'right';
     
     dip_one.style.textAlign = 'center';
     dip_one.style.backgroundColor = 'rgb(162, 68, 230)';
     dip_one.style.borderRadius = '10px 100px / 120px';
-    dip_one.style.width= '60%';
+    dip_one.style.width= '70%';
     dip_one.style.height= 'auto';
     dip_one.style.float = 'left';
     dip_one.style.marginLeft = '8.5%'
@@ -93,7 +93,7 @@
     dip_two.style.textDecorationColor = 'white';
     dip_two.style.backgroundColor = 'rgb(75, 208, 245)';
     dip_two.style.borderRadius = '10px 100px / 120px';
-    dip_two.style.width= '60%';
+    dip_two.style.width= '70%';
     dip_two.style.height= 'auto';
     dip_two.style.float = 'right';
     dip_two.style.marginRight = '8.5%'
@@ -308,18 +308,18 @@
       if (e === true) {
         e.stopPropagation()
       }
-      if (this.style.width === '100%') {
+      if (this.style.width === '90%') {
         return
       }
-      if ( this.style.transform === 'translateX(150px)') {
+      if ( this.style.transform === 'translateX(105px)') {
         
         this.style.position = 'absolute'
         this.style.zIndex = '1'
-        this.style.width = '100%'
+        this.style.width = '90%'
         this.style.height = '70%'
         this.style.margin = '0'
         this.style.backgroundColor = 'indigo'
-        this.style.marginLeft = '-45%'
+        this.style.marginLeft = '-25%'
         var child = this.children ;
     
         for( var i = 0; i < child.length ; i++){
@@ -341,7 +341,7 @@
     
         this.style.position = 'absolute'
         this.style.zIndex = '1'
-        this.style.width = '100%'
+        this.style.width = '90%'
         this.style.height = '70%'
         var child = this.children ;
     
@@ -366,17 +366,17 @@
     
     function DezoomExp(id) {
     
-      if (id.style.width === '100%') {
+      if (id.style.width === '90%') {
     
     
         id.style.position = 'absolute'
         id.style.zIndex = '0'
-        id.style.width = '60%'
+        id.style.width = '70%'
         id.style.height = 'auto'
     
         id.animate([
         // keyframes
-        { width: '100%' }, 
+        { width: '90%' }, 
         { height: '20%' }, 
     
         ], { 
@@ -408,14 +408,14 @@
     
     function DezoomRight(id) {
       
-      if (id.style.width === '100%') {
+      if (id.style.width === '90%') {
         
     
         id.style.position = 'absolute'
         id.style.zIndex = '0'
-        id.style.width = '60%'
+        id.style.width = '70%'
         id.style.height = 'auto'
-        id.style.transform = 'translateX(150px)'
+        id.style.transform = 'translateX(105px)'
     
         var child = id.children ;
     
@@ -429,7 +429,7 @@
     
         id.animate([
         // keyframes
-        { width: '100%' }, 
+        { width: '90%' }, 
         { height: '20%' },
     
         ], { 
@@ -447,10 +447,11 @@
         id.style.backgroundColor = 'blue'
         id.style.position = 'absolute'
         id.style.zIndex = '0'
-        id.style.width = '60%'
+        id.style.width = '70%'
         id.style.height = 'auto'
-        id.style.transform = 'translateX(150px)'
-    
+        id.style.transform = 'translateX(105px)'
+        id.style.marginRight = "0"
+
         var child = id.children ;
     
         for( var i = 0; i < child.length ; i++){
@@ -460,7 +461,7 @@
     
         id.animate([
         // keyframes
-        { width: '100%' }, 
+        { width: '90%' }, 
         { height: '20%' },
     
         ], { 

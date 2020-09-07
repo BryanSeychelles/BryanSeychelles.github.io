@@ -341,7 +341,7 @@ nav a:hover{
 }
 
 .close {
-	margin-right: 9%;
+	margin-right: 15%;
 	color: ivory;
 }
 
@@ -591,7 +591,7 @@ footer{
 	}
 
 	#language {
-		margin-top: 100%;
+		margin-top: 150%;
 		margin-left: 0;
 		width: 100%;
 		height: auto;
@@ -615,7 +615,8 @@ footer{
 	}
 
 	#content_one {
-		overflow: scroll;
+		overflow-y: scroll;
+		overflow-x: hidden;
 		height: 70vh;
 		position: relative;
 	}
@@ -697,6 +698,28 @@ footer{
 	#formation {
 		margin-top: 100%;
 	}
+
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+	#croix {
+		margin-left: -100%;
+	}
+	
+	#exp_one {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	#exp_two {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	#exp_three {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	#exp_four {
+		font-family: 'Montserrat', sans-serif;
+		font-size: smaller;	}
 	
 	#dip_two {
 		margin-top: 10%;
@@ -720,6 +743,20 @@ footer{
 		background-color: rgb(216, 181, 241);
 		margin-left: -27%;
 		margin-top: -180%;
+	}
+
+	#vert {
+		margin-left: 40%;
+
+	}
+
+	#round_one {
+		margin-top: -470%;
+		margin-left: 0;
+	}
+	
+	#round_two {
+		margin-left: 0;
 	}
 
 }
