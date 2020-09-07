@@ -34,6 +34,8 @@ var section3 = document.getElementById('content_three')
 var exp_one = document.getElementById('exp_one')
 var exp_two = document.getElementById('exp_two')
 var exp_three = document.getElementById('exp_three')
+var exp_four = document.getElementById('exp_four')
+
 
 var section4 = document.getElementById('content_four')
 var dip_one = document.getElementById('dip_one')
@@ -56,42 +58,47 @@ right.style.fontFamily = "'Ubuntu', sans-serif";
 
 exp_one.style.textAlign = 'center';
 exp_one.style.backgroundColor = 'rgb(162, 68, 230)';
-exp_one.style.borderRadius = '100px';
-exp_one.style.width= '40%';
+exp_one.style.borderRadius = '10px 100px / 120px';
+exp_one.style.width= '60%';
 exp_one.style.height= 'auto';
 exp_one.style.float = 'left';
-exp_one.style.marginLeft = '7.5%'
 
 exp_two.style.textAlign = 'center';
 exp_two.style.textDecorationColor = 'white';
 exp_two.style.backgroundColor = 'rgb(75, 208, 245)';
-exp_two.style.borderRadius = '100px';
-exp_two.style.width= '40%';
+exp_two.style.borderRadius = '10px 100px / 120px';
+exp_two.style.width= '60%';
 exp_two.style.height= 'auto';
-exp_two.style.float = 'right';
-exp_two.style.marginRight = '8.5%'
+exp_two.style.float = 'left';
 
 exp_three.style.textAlign = 'center';
 exp_three.style.backgroundColor = 'rgb(162, 68, 230)';
-exp_three.style.borderRadius = '100px';
-exp_three.style.width= '40%';
+exp_three.style.borderRadius = '10px 100px / 120px';
+exp_three.style.width= '60%';
 exp_three.style.height= 'auto';
-exp_three.style.float = 'left';
-exp_three.style.marginLeft = '7.5%'
+exp_three.style.float = 'right';
+
+exp_four.style.textAlign = 'center';
+exp_four.style.textDecorationColor = 'white';
+exp_four.style.backgroundColor = 'rgb(75, 208, 245)';
+exp_four.style.borderRadius = '10px 100px / 120px';
+exp_four.style.width= '60%';
+exp_four.style.height= 'auto';
+exp_four.style.float = 'right';
 
 dip_one.style.textAlign = 'center';
 dip_one.style.backgroundColor = 'rgb(162, 68, 230)';
-dip_one.style.borderRadius = '100px';
-dip_one.style.width= '40%';
+dip_one.style.borderRadius = '10px 100px / 120px';
+dip_one.style.width= '60%';
 dip_one.style.height= 'auto';
 dip_one.style.float = 'left';
-dip_one.style.marginLeft = '7.5%'
+dip_one.style.marginLeft = '8.5%'
 
 dip_two.style.textAlign = 'center';
 dip_two.style.textDecorationColor = 'white';
 dip_two.style.backgroundColor = 'rgb(75, 208, 245)';
-dip_two.style.borderRadius = '100px';
-dip_two.style.width= '40%';
+dip_two.style.borderRadius = '10px 100px / 120px';
+dip_two.style.width= '60%';
 dip_two.style.height= 'auto';
 dip_two.style.float = 'right';
 dip_two.style.marginRight = '8.5%'
@@ -115,13 +122,6 @@ for( var i = 0; i < closes.length ; i++)
    }
 
 // ---------------------------- animation -----------------------------//
-
-if (window.matchMedia("(max-width: 800px)").matches) {
-
-  alert("Ce site Web est disponible qu'en version ordinateur. Merci de le consulter sur un pc ou un ordinateur. Version mobile à venir. Bien cordialement. Bryan Seychelles")
-
-}
-
 
 $(document).ready(function animateComputer() {
 
@@ -308,17 +308,20 @@ $(document).ready(function animateComputer() {
 
 })
 
-function ZoomExp() {
-  if (this.style.width === '90%') {
+function ZoomExp(e) {
+  if (e === true) {
+    e.stopPropagation()
+  }
+  if (this.style.width === '100%') {
     return
   }
-  if ( this.style.transform === 'translateX(700px)') {
+  if ( this.style.transform === 'translateX(350px)') {
     
     section3.style.position = 'relative'
     section4.style.position = 'relative'
     this.style.position = 'absolute'
-    this.style.zIndex = '10000'
-    this.style.width = '90%'
+    this.style.zIndex = '1'
+    this.style.width = '100%'
     this.style.height = '70%'
     this.style.margin = '0'
     this.style.backgroundColor = 'indigo'
@@ -345,8 +348,8 @@ function ZoomExp() {
     section3.style.position = 'relative'
     section4.style.position = 'relative'
     this.style.position = 'absolute'
-    this.style.zIndex = '10000'
-    this.style.width = '90%'
+    this.style.zIndex = '1'
+    this.style.width = '100%'
     this.style.height = '70%'
     var child = this.children ;
 
@@ -369,20 +372,20 @@ function ZoomExp() {
   }
 }
 
-function DézoomExp(id) {
+function DezoomExp(id) {
 
-  if (id.style.width === '90%') {
+  if (id.style.width === '100%') {
 
     section3.style.position = 'relative'
     section4.style.position = 'relative'
     id.style.position = 'absolute'
     id.style.zIndex = '0'
-    id.style.width = '40%'
+    id.style.width = '60%'
     id.style.height = 'auto'
 
     id.animate([
     // keyframes
-    { width: '90%' }, 
+    { width: '100%' }, 
     { height: '20%' }, 
 
     ], { 
@@ -404,7 +407,7 @@ function DézoomExp(id) {
   for( var i = 0; i < closes.length ; i++)
     {
       closes[i].style.display = 'none';
-    } 
+    }
   }
   else {
     return
@@ -412,21 +415,31 @@ function DézoomExp(id) {
 
 }
 
-function DézoomRight(id) {
+function DezoomRight(id) {
   
-  if (id.style.width === '90%') {
-
+  if (id.style.width === '100%') {
+    
     section3.style.position = 'relative'
     section4.style.position = 'relative'
     id.style.position = 'absolute'
     id.style.zIndex = '0'
-    id.style.width = '40%'
+    id.style.width = '60%'
     id.style.height = 'auto'
-    id.style.transform = 'translateX(700px)'
+    id.style.transform = 'translateX(350px)'
+
+    var child = id.children ;
+
+    for( var i = 0; i < child.length ; i++){
+    child[0].style.display = 'none';
+    child[2].style.display = 'none';
+    child[3].style.display = 'none';
+
+
+    }
 
     id.animate([
     // keyframes
-    { width: '90%' }, 
+    { width: '100%' }, 
     { height: '20%' },
 
     ], { 
@@ -435,41 +448,31 @@ function DézoomRight(id) {
     duration: 100,
     })
 
-  for( var i = 0; i < date.length ; i++)
-    {
-      date[i].style.display = 'none';
-    }
-
-  for( var i = 0; i < descriptif.length ; i++)
-    {
-      descriptif[i].style.display = 'none';
-    } 
-
-    for( var i = 0; i < descriptif.length ; i++)
-    {
-      descriptif[i].style.display = 'none';
-    } 
-
-    for( var i = 0; i < closes.length ; i++)
-    {
-      closes[i].style.display = 'none';
-    } 
 
   } 
   if (id.style.backgroundColor === 'indigo') {
 
+    console.log('dezoom', "c'est bien celui la" )
+
+    id.style.backgroundColor = 'blue'
     section3.style.position = 'relative'
     section4.style.position = 'relative'
     id.style.position = 'absolute'
     id.style.zIndex = '0'
-    id.style.width = '40%'
+    id.style.width = '60%'
     id.style.height = 'auto'
-    id.style.backgroundColor = 'blue'
-    id.style.marginLeft = '2.5%'
+    id.style.transform = 'translateX(350px)'
+
+    var child = id.children ;
+
+    for( var i = 0; i < child.length ; i++){
+    child[0].style.display = 'none';
+    child[2].style.display = 'none';
+    child[3].style.display = 'none';
 
     id.animate([
     // keyframes
-    { width: '90%' }, 
+    { width: '100%' }, 
     { height: '20%' },
 
     ], { 
@@ -478,21 +481,8 @@ function DézoomRight(id) {
     duration: 100,
     })
 
-  for( var i = 0; i < date.length ; i++)
-    {
-      date[i].style.display = 'none';
-    }
-
-  for( var i = 0; i < descriptif.length ; i++)
-    {
-      descriptif[i].style.display = 'none';
-    }
-
-    for( var i = 0; i < closes.length ; i++)
-    {
-      closes[i].style.display = 'none';
-    } 
   }
+}
    else {
     return
   }
@@ -501,6 +491,12 @@ function DézoomRight(id) {
 exp_one.addEventListener('dblclick', ZoomExp)
 exp_two.addEventListener('dblclick', ZoomExp)
 exp_three.addEventListener('dblclick', ZoomExp)
+exp_four.addEventListener('dblclick', ZoomExp)
   dip_one.addEventListener('dblclick', ZoomExp)
   dip_two.addEventListener('dblclick', ZoomExp)
 
+  if (window.matchMedia("(max-width: 800px)").matches) {
+
+    document.location.href="http://127.0.0.1:5500/index_mobile.html";
+        
+    }

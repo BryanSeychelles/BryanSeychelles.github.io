@@ -243,7 +243,15 @@ nav a:hover{
 
 #content_three {
     margin-top: 20%;
-    height: 40vh;
+    height: 90vh;
+}
+
+#vert {
+	width: 5%;
+	height: 90%;
+	background-color: #292c2f;
+	border-radius: 90%;
+	position: relative;
 }
 
 #content_four{
@@ -255,12 +263,34 @@ nav a:hover{
     font-family: 'Merriweather', serif;
 }
 
+#round_one {
+	position: absolute;
+	width: 40%;
+	height: 8%;
+	border-radius: 100%;
+	background-color: rgb(216, 181, 241);
+	margin-left: -17%;
+	margin-top: -350%;
+}
+
+#round_two {
+	position: absolute;
+	width: 40%;
+	height: 8%;
+	border-radius: 100%;
+	background-color: rgb(216, 181, 241);
+	margin-left: -17%;
+	margin-top: -180%;
+}
+
+
 #exp_one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/developpeur.png');
     background-repeat: no-repeat;
     background-position: center;
 	background-size: cover;
-    color: lavenderblush;
+	color: lavenderblush;
+	
 }
 
 #exp_two{
@@ -273,6 +303,13 @@ nav a:hover{
 
 #exp_three{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/seynod_1490.jpg');
+    color: lavenderblush;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+#exp_four {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bouigues.jpg');
     color: lavenderblush;
     background-repeat: no-repeat;
     background-position: center;
@@ -304,7 +341,7 @@ nav a:hover{
 }
 
 .close {
-	margin-right: 5%;
+	margin-right: 9%;
 	color: ivory;
 }
 
@@ -467,6 +504,7 @@ footer{
 	}
 	.container{
 		width: auto;
+		height: auto;
 		margin: 0 auto;
 		padding-top: 7px;
 	}
@@ -547,20 +585,16 @@ footer{
 		font-size: auto;
 	}
 
-	#content_one {
-		position: relative;
+	#presentation {
+		width: 100%;
+		height: auto;
 	}
 
 	#language {
-		position: absolute;
-		margin-top: 20%;
-		margin-left: 5%;
-		width: 80%;
-		height: 70%;
-	}
-
-	#presentation { 
-		visibility: hidden;
+		margin-top: 100%;
+		margin-left: 0;
+		width: 100%;
+		height: auto;
 	}
 
 	#portable {
@@ -570,92 +604,123 @@ footer{
 	}
 
 	#in_portable {
+		overflow-y: auto;
+		overflow-x: hidden;
 		position: absolute;
 		width: 75%;
-		height: 62%;
-		margin-top: -83%;
+		height: 62.5%;
+		margin-top: -71.5%;
 		margin-left: 12.5%;
+		background-color: rgba(2, 0, 3, 0.513);
 	}
 
-	#blood {
-		position: absolute;
+	#content_one {
+		overflow: scroll;
+		height: 70vh;
+		position: relative;
 	}
 
 	.lang_1 {
 		z-index: 1;
-		margin-left: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
+		
 	}
 
 	.lang_2 {
 		z-index: 1;
-		margin-left: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
 	}
 
 	.lang_3 {
 		z-index: 1;
-		margin-left: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
+		
 	}
 
 	.lang_4 {
 		z-index: 1;
-		margin-left: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
+		
 	}
 
 	.lang_5 {
 		z-index: 1;
-		margin-left: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
+		
 	}
 
 	.lang_6 {
 		z-index: 1;
-		margin-left: 20%;
-		margin-top: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
 	}
 
 	.lang_7 {
 		z-index: 1;
-		margin-left: 20%;
-		margin-top: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
+		
 	}
 
 	.lang_8 {
 		z-index: 1;
-		margin-left: 15%;
-		margin-top: 10%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
+		
 	}
 
 	.lang_9 {
 		z-index: 1;
-		margin-left: 22.5%;
-		margin-top: 15%;
+		margin-left: 25%;
 		width: auto;
-		height: 90%;
-		visibility: hidden;
+		height : 90%;
+		
 	}
- 
+
+	#experience {
+		margin-top: 80%;
+	}
+
+	#formation {
+		margin-top: 100%;
+	}
+	
+	#dip_two {
+		margin-top: 10%;
+	}
+
+	#round_one {
+		position: absolute;
+		width: 60%;
+		height: 12%;
+		border-radius: 100%;
+		background-color: rgb(216, 181, 241);
+		margin-left: -27%;
+		margin-top: -350%;
+	}
+	
+	#round_two {
+		position: absolute;
+		width: 60%;
+		height: 12%;
+		border-radius: 100%;
+		background-color: rgb(216, 181, 241);
+		margin-left: -27%;
+		margin-top: -180%;
+	}
+
 }
 
